@@ -1,0 +1,11 @@
+@import "common";
+
+.hot-posts {
+  a {
+    color: #505050;
+  }
+  .badge {
+    float: right;
+    background-color: $colorPrimary;
+  }
+}

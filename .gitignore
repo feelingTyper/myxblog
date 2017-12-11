@@ -1,0 +1,16 @@
+/vendor
+/node_modules
+/public/storage
+/.idea
+Homestead.yaml
+Homestead.json
+.env
+_ide_helper.php
+.vscode/
+
+/storage/
+
+/public/css/
+/public/fonts/
+/public/js/
+/public/mix-manifest.json
