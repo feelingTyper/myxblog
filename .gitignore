@@ -7,6 +7,8 @@ Homestead.json
 .env
 _ide_helper.php
 .vscode/
+/storage
+package-lock.json
 
 
 
