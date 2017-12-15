@@ -14,8 +14,8 @@
     <meta property="og:description" content="{{ $site_description or '' }}">
     <meta name="theme-color" content="#52768e">
     <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    {{-- <link href="{{ mix('css/home.css') }}" rel="stylesheet"> --}}
-    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/home.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/home.css') }}" rel="stylesheet"> -->
     @include('widget.google_analytics')
     @if(isset($home_bg_images) && $home_bg_images)
         <?php
