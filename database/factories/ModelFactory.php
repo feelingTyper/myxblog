@@ -20,6 +20,15 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
+$factory->defineAs(App\User::class, 'admin', function (Faker\Generator $faker) {
+    return [
+        'name' => 'lshaluminum',
+        'email' => config('app.email'),
+        'password' => bcrypt('lshaluminum@123'),
+        'remember_token' => str_random(10),
+    ];
+});
+
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
     $html_content = join("\n\n", $faker->paragraphs(mt_rand(7, 20)));
     return [
