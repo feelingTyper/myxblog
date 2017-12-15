@@ -8,19 +8,19 @@ return [
  * Time: 22:47
  */
     'facebook' => [
-        'url'  => 'https://www.facebook.com/lufficc',
+        'url'  => 'https://www.facebook.com/lshaluminum',
         'icon'   => 'facebook',
     ],
     'twitter'  => [
-        'url'  => 'https://twitter.com/lufficc',
+        'url'  => 'https://twitter.com/lshaluminum',
         'icon'   => 'twitter',
     ],
     'weibo'    => [
-        'url'  => 'http://weibo.com/u/2363498941',
+        'url'  => 'http://weibo.com/u/3291993551',
         'icon'   => 'weibo',
     ],
     'github'  => [
-        'url' =>'https://github.com/lufficc',
+        'url' =>'https://github.com/feelingtyper',
         'icon'   => 'github',
     ],
 
