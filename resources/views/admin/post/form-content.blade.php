@@ -73,10 +73,9 @@
 </div>
 <div class="form-group">
     <label for="post-content-textarea" class="form-control-label">文章内容*</label>
-    <textarea spellcheck="false" id="post-content-textarea" class="form-control{{ $errors->has('content') ? ' is-invalid ' : ' ' }}" name="content"
-              rows="36"
-              placeholder="请使用 Markdown 格式书写"
-              style="resize: vertical">{{ isset($post) ? $post->content : old('content') }}</textarea>
+    <div spellcheck="false" id="post-content-textarea" class="{{ $errors->has('content') ? ' is-invalid ' : ' ' }}"></div>
+    <textarea id="content" name="content" style="display:none;">{{ isset($post) ? $post->content : old('content') }}</textarea>
+    <textarea id="html_content" name="html_content" style="display:none;"></textarea>
     @if($errors->has('content'))
         <div class="invalid-feedback">
             <strong>{{ $errors->first('content') }}</strong>
