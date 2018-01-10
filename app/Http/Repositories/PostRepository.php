@@ -176,7 +176,7 @@ class PostRepository extends Repository
             array_merge(
                 $request->except(['_token', 'description']),
                 [
-                    'html_content' => $this->markDownParser->parse($request->get('content'), false),
+                    // 'html_content' => $this->markDownParser->parse($request->get('content'), false),
                     'description' => $this->markDownParser->parse($request->get('description'), false),
                 ]
             )
@@ -219,7 +219,7 @@ class PostRepository extends Repository
             array_merge(
                 $request->except(['_token', 'description']),
                 [
-                    'html_content' => $this->markDownParser->parse($request->get('content'), false),
+                    // 'html_content' => $this->markDownParser->parse($request->get('content'), false),
                     'description' => $this->markDownParser->parse($request->get('description'), false),
                 ]
             ));
