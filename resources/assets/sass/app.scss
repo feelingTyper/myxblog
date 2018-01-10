@@ -7,15 +7,16 @@
 }
 
 @import "post";
-@import "pre-code";
+//@import "pre-code";
 @import "header";
-@import "tag";
+//@import "tag";
 @import "widget";
 @import "form";
 @import "timeline";
 @import "comment";
 @import "hot-post";
 @import "pay";
+@import "show";
 
 html, body {
   //color: #505050;
