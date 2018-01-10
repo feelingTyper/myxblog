@@ -130,8 +130,10 @@
     function showTableOfContent(ele, child) {
         var ele = $(ele), child = $(child);
         var offset = $('.container').offset().left;
-        console.log('ofset', offset);
+        var offset2 = $('#sidebar').width();
+        console.log(offset, offset2)
         if ($('.markdown-toc-list').html()) {
+            // left: offset-offset2+73
             ele.css({display: 'block'});
         }
     }
@@ -140,9 +142,16 @@
 
     $(document).scroll(function() {
         if ($(document).scrollTop() > 157) {
-            $('#sidebar').css({position:'fixed', top: 0});
+            $('#sidebar').css({position:'fixed', top: 0, height: ''});
+            var bottom = $(document).height() - $(document).scrollTop();
+            if (bottom <= 726) {
+                bottom = 726-bottom;
+                $('#sidebar').css({bottom: bottom});
+            } else {
+                $('#sidebar').css({bottom: 0});
+            }
         } else {
-            $('#sidebar').css({position:'absolute', top: '157px'});
+            $('#sidebar').css({position:'absolute', top: '157px', bottom: 0, height: '100%'});
         }
     });
 

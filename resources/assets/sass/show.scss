@@ -2,7 +2,6 @@
 
  #sidebar {
     width: 400px;
-    height: 100%;
     position: absolute;
     top: 157px;
     left: 0;
@@ -10,9 +9,6 @@
     background: #fff;
     z-index: 100;
     padding: 18px; 
-    border: 1px solid #ddd;
-    border-top: none;
-    border-bottom: none;
     display: none;
 }
             
